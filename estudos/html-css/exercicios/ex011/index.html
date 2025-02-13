@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de mídias</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Aumente e dimunua o tamanho do seu navegador, ou abra em dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/paisagem-300.jpeg" type="image/jpeg">
+        <source media="(max-width: 950px)" srcset="imagens/paisagem-600.jpeg" type="image/jpeg">
+        <img src="imagens/paisagem.jpeg" alt="paisagem grande">
+    </picture>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande">
+    </picture>
+    <h2>Teste de áudios</h2>
+    <audio preload="metadata" controls>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta áudio <a href="media/guanacast-33.mp3" download="guanacast-33" type="audio/mpeg"></a></p>
+    </audio>
+    <audio preload="metadata" controls>
+        <source src="media/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
