@@ -50,7 +50,7 @@ a:hover{
 section{
     padding: 10vh 0vh;
     font-family: sriracha, Arial, Helvetica, sans-serif;
-    font-size: 3.75vw;
+    font-size: 3.5vw;
     padding-left: 7.5%;
     line-height: 2em;
 }
@@ -63,7 +63,6 @@ section{
     display: inline-block;
     color: white;
     background-color: rgba(0, 0, 0, 0.33);
-    max-width: 390px;
     padding: 5px
 }
 #livro{
