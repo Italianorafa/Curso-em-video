@@ -6,11 +6,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/default.css" media="all">
-    <link rel="stylesheet" href="estilos/medium.css" media="screen and (min-width: 600px) and (max-width: 768px)">
-    <link rel="stylesheet" href="estilos/large.css" media="screen and (min-width: 768px) and (max-width:1200px)">
-    <link rel="stylesheet" href="estilos/larger.css" media="screen and (min-width:1200px)">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -26,7 +24,7 @@
     </header>
     <main>
         <article>
-            <h2>Oi bolotao</h2>
+            <h2>Testando media Query</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam distinctio quis, ex amet molestias provident quasi incidunt. Ipsum similique repellat voluptate corporis. Debitis alias delectus ullam quis iste corporis obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, molestias dolorum voluptate vitae accusamus perspiciatis officiis esse at veritatis tempore earum? Perspiciatis commodi saepe architecto ea tenetur animi, fugit doloribus.
             </p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia nisi, iure possimus cumque voluptas autem odit non voluptatem tempora dolorem reprehenderit! Fugiat a libero placeat architecto nihil reprehenderit voluptate vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex error illum, amet voluptatum accusamus nesciunt aliquid, qui libero enim iusto explicabo ullam. Voluptas aliquam corporis accusamus reiciendis, laborum facilis quae?</p>
@@ -41,6 +39,14 @@
             }
             else{
                 itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
             }
         }
     </script>
